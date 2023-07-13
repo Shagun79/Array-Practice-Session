@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css" />
+  </head>
+  <body>
+    <h1 class="title">To do List</h1>
+
+    <div class="container">
+      <div class="toDOapp">
+        <input type="text" id="toDO" />
+        <button onclick="toDO()">ADD ITEM</button>
+        <p id="listItem" style="background-color: white"></p>
+      </div>
+    </div>
+
+    <script>
+      let item = [];
+
+      function toDO() {
+        let userinput = document.getElementById("toDO").value;
+        item.push(userinput);
+        let inputnext = item.join("<br> <br>");
+
+        document.getElementById("listItem").innerHTML =  inputnext;
+      
+      }
+    </script>
+  </body>
+</html

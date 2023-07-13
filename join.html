@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="userinput" />
+    <button onclick="userinputnext()">SUBMIT</button>
+
+    <script>
+      function userinputnext() {
+        let newvalue = document.getElementById("userinput").value;
+        let star = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let star2 = star.join(newvalue);
+        document.write(star2);
+      }
+    </script>
+  </body>
+</html>

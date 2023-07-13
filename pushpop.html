@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="userinput" />
+    <button onclick="digit()">push</button>
+    <button onclick="remove()">pop</button>
+    <!-- where to add element
+   last -->
+
+    <!-- create two button one for push and one pop
+      if pop then remove one element
+      if push then add one element -->
+
+    <script>
+      let number = [];
+
+      function digit() {
+        let value = document.getElementById("userinput").value;
+
+        number.push(value);
+        document.write(number);
+      }
+      function remove() {
+        number.pop();
+        document.write(number);
+      }
+    </script>
+  </body>
+</html>
